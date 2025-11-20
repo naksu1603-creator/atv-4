@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Acessível</title>
+
+  <link rel="stylesheet" href="src/css/style.min.css">
+  <link id="high-contrast" rel="stylesheet" href="src/css/high-contrast.css" disabled>
+</head>
+
+<body>
+  <header>
+    <nav aria-label="Menu principal">
+      <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <button id="toggle-dark" aria-pressed="false">🌙 Modo Escuro</button>
+      <button id="toggle-contrast" aria-pressed="false">🔳 Alto Contraste</button>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section id="sobre">
+      <h1>Projeto Acessível</h1>
+      <p>Este projeto segue as diretrizes WCAG 2.1 AA.</p>
+    </section>
+
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <ul>
+        <li>Desenvolvimento Web</li>
+        <li>Design Acessível</li>
+        <li>Consultoria Digital</li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <form aria-label="Formulário de contato">
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" required>
+
+        <label for="email">E-mail</label>
+        <input id="email" type="email" required>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Meu Projeto Acessível</p>
+  </footer>
+
+  <script src="src/js/script.min.js"></script>
+</body>
+</html>
