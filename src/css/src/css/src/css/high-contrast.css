@@ -1,0 +1,12 @@
+body {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+a, button {
+  color: yellow !important;
+}
+
+:focus {
+  outline: 3px solid #fff !important;
+}
